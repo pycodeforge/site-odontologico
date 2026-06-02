@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Sorriso Perfeito</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-tooth"></i> Sorriso Perfeito</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+                <div class="menu-mobile">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato ou agende sua consulta</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Av. Paulista, 1000 - Bela Vista<br>São Paulo, SP - 01310-100</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 3456-7890</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>(11) 98765-4321</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@sorrisoperfeito.com.br</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Sexta: 8h às 20h<br>Sábado: 8h às 14h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="contatoForm">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <select id="assunto" name="assunto">
+                                <option value="consulta">Agendar Consulta</option>
+                                <option value="duvida">Dúvidas</option>
+                                <option value="orcamento">Orçamento</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.097648621949!2d-46.65817868447552!3d-23.56461636797068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1648060138295!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4><i class="fas fa-tooth"></i> Sorriso Perfeito</h4>
+                    <p>Cuidando do seu sorriso com excelência.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sorriso Perfeito - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="scritpt.js"></script>
+</body>
+</html>
